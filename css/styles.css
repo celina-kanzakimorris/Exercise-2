@@ -1,0 +1,123 @@
+
+*{
+	box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    margin: 0.625em;
+}
+
+header{
+    height: 200px;
+    padding: 80px;
+    margin-bottom: 40px;
+    background-color: #243c77;
+}
+
+header h1{
+    margin: 0px;
+    color: #FDDA1C;
+    text-align: center;
+}
+
+h2{
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+}
+
+.crnt{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: (-50%, -50%);
+}
+
+.crnt p{
+    color: white;
+    font-size: 24px;
+}
+
+.search{
+    float: right;
+}
+
+.months{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.grid-parent {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+
+.month{
+    text-align: center;
+}
+
+.month__blk{
+    background-color: #262626;
+    color: white;
+}
+
+.month__red{
+    background-color: #92140C;
+    color: white;
+}
+
+.month__current{
+    grid-row: 1 / span 3;
+    grid-column: 3 / span 2;
+    background-color: #262626;
+}
+
+.month--nov{
+    grid-row: 3 / span 1;
+    grid-column: 5 / span 1;
+}
+
+.month--dec{
+    grid-row: 3 / span 1;
+    grid-column: 6 / span 1;
+}
+
+.item-1{
+    grid-row: 1/span 1;
+    grid-column: 1/ span 2;
+}
+
+.item-2{
+    grid-row: 1;
+    grid-column: 1/ span 2;
+    text-align: center;
+}
+
+.item-3{
+    text-align: center;
+}
+
+.item-3 h3{
+    margin-bottom: 100px;
+}
+
+.item-3 q{
+    font-size: 20px;
+}
+
+.item-4{
+    margin-top: 25px;
+    grid-column: 4 / span 3;
+}
